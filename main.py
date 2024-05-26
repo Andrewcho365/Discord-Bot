@@ -19,7 +19,7 @@ totp = pyotp.TOTP(os.environ['Authenticator_key'])
 
 
 
-equrl = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/E-A0016-001?Authorization=CWA-7CE22434-DC03-4D79-ADFA-CACFF47298FF'
+equrl = ''
 data = requests.get(equrl)
 data_json = data.json()
 eq = data_json['records']['Earthquake']
